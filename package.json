@@ -1,0 +1,26 @@
+{
+  "name": "starterlight-tasks",
+  "description": "Build tasks tailored for Zivtech's Starterlight base theme.",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "repository": {},
+  "keywords": [],
+  "author": "John Kaeser <jkaeser@zivtech.com>",
+  "bugs": {},
+  "homepage": "",
+  "dependencies": {
+    "browser-sync": "^2.26.5",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "cssnano-preset-default": "^4.0.7",
+    "favicons": "^5.3.0",
+    "gulp": "^4.0.2",
+    "gulp-inject": "^5.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.0.9",
+    "gulp-sass-lint": "^1.4.0",
+    "postcss-preset-env": "^6.6.0",
+  }
+}
