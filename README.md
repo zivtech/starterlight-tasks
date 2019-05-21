@@ -7,17 +7,17 @@
 ## Usage
 
 1. Set a global configuration object:
-  ```
-  global.SLoptions = { /* options */ };
-  ```
+    ```
+    global.SLoptions = { /* options */ };
+    ```
 2. Load the gulp tasks:
-  ```
-  const { tasks } = = require('@zivtech/starterlight-tasks');
+    ```
+    const { tasks } = = require('@zivtech/starterlight-tasks');
 
-  for(let task in tasks) {
-    exports[task] = tasks[task];
-  }
-  ```
+    for(let task in tasks) {
+      exports[task] = tasks[task];
+    }
+    ```
 
 ## Options
 
