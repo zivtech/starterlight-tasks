@@ -85,7 +85,10 @@ function faviconsInject() {
   return gulp.src(global.SLoptions.favicons.paths.templateDir + global.SLoptions.favicons.paths.templateFile)
     .pipe(inject(gulp.src(global.SLoptions.favicons.paths.dest + global.SLoptions.favicons.config.html), {
       transform: function (filePath, file) {
-        return file.contents.toString();
+        return file.contents
+          .toString()
+          .replace(/device-width/g, 'width')
+          .replace(/device-height/g, 'height');
       }
     }))
   .pipe(gulp.dest(global.SLoptions.favicons.paths.templateDir));
