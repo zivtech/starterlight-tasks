@@ -49,7 +49,7 @@ An object of [sass-lint configuration options](https://github.com/sasstools/sass
 **postcss** (obj)
 
 - **postcssPresetEnv**: An object of [postcss-preset-env configuration options](https://github.com/csstools/postcss-preset-env#options). Use this if you need to support older browsers (e.g. IE11) but want to use newer CSS specifications. See https://preset-env.cssdb.org/features for a list of features this helps support.
-- **mqpacker**: An object of [mqpacker configuration options](https://github.com/hail2u/node-css-mqpacker#options).
+- **postcssSortMediaQueries**: An object of [postcss-sort-media-queries configuration options](https://www.npmjs.com/package/postcss-sort-media-queries).
 - **cssnano**: An object of [cssnano configuration options](https://cssnano.co/guides/presets). We use the default preset and override a few of its optimization options.
 
 **favicons** (obj)
@@ -132,7 +132,7 @@ Here are the defaults we use. You can copy this and configure to fit your needs.
       autoprefixer: {},
       features: {}
     },
-    mqpacker: {},
+    postcssSortMediaQueries: {},
     cssnano: {
       preset: [
         default,
@@ -276,7 +276,7 @@ Here are the defaults we use. You can copy this and configure to fit your needs.
       "autoprefixer": {},
       "features": {}
     },
-    "mqpacker": {},
+    "postcssSortMediaQueries": {},
     "cssnano": {
       "preset": [
         "default",

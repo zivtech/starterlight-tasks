@@ -7,7 +7,7 @@ const gulp          = require('gulp'),
       sassGlob      = require('gulp-sass-glob'),
       sassLint      = require('gulp-sass-lint'),
       postcss       = require('gulp-postcss'),
-      mqpacker      = require('css-mqpacker'),
+      sortMedia      = require('postcss-sort-media-queries'),
       presetEnv     = require('postcss-preset-env'),
       cssnano       = require('cssnano'),
       eslint        = require('gulp-eslint'),
@@ -25,7 +25,7 @@ function sass() {
     .pipe(gSass(global.SLoptions.sass.config)).on('error', gSass.logError)
     .pipe(postcss([
       presetEnv(global.SLoptions.postcss.postcssPresetEnv),
-      mqpacker(global.SLoptions.postcss.mqpacker),
+      sortMedia(global.SLoptions.postcss.postcssSortMediaQueries),
       cssnano(global.SLoptions.postcss.cssnano),
     ]))
     .pipe(gulp.dest(global.SLoptions.sass.paths.dest, {
